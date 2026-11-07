@@ -16,7 +16,7 @@ local RunService = game:GetService("RunService")
 local LocalPlayer = Players.LocalPlayer
 local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
 
-local TOGGLE_KEY = Enum.KeyCode.RightShift
+local TOGGLE_KEY = Enum.KeyCode.F
 
 -- ============================================================
 -- 🎨 THEME & ICONS
