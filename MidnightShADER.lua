@@ -57,7 +57,7 @@ local Locales = {
         presets = "PRESETS", lighting = "LIGHTING", clock = "TIME CLOCK", sync = "Sync Real Time",
         bloom = "BLOOM", brightness = "Brightness", contrast = "Contrast", saturation = "Saturation",
         bloom_int = "Intensity", bloom_size = "Size", lang = "LANGUAGE", audio = "AUDIO", audio_toggle = "UI Sounds",
-        fog = "FOG", custom_shader = "CUSTOM SHADER",
+        fog = "FOG", custom_shader = "CUSTOM SHADER", motion_blur = "Motion Blur", motion_blur_strength = "Motion Blur Strength",
         fog_start = "Fog Start", fog_end = "Fog End", atm_density = "Atmosphere Density", atm_haze = "Atmosphere Haze",
         exposure = "Exposure", env_diffuse = "Env Diffuse", env_specular = "Env Specular",
         tint_hue = "Tint Hue", tint_strength = "Tint Strength",
@@ -70,7 +70,7 @@ local Locales = {
         presets = "ธีมสำเร็จรูป", lighting = "ตั้งค่าแสง", clock = "เวลาในเกม", sync = "ซิงค์เวลาจริง",
         bloom = "แสงฟุ้ง", brightness = "ความสว่าง", contrast = "คอนทราสต์", saturation = "ความอิ่มตัวสี",
         bloom_int = "ความเข้ม", bloom_size = "ขนาด", lang = "ภาษา", audio = "ระบบเสียง", audio_toggle = "เสียงประกอบ UI",
-        fog = "หมอก", custom_shader = "เชดเดอร์กำหนดเอง",
+        fog = "หมอก", custom_shader = "เชดเดอร์กำหนดเอง", motion_blur = "โมชั่นเบลอ", motion_blur_strength = "ความแรงโมชั่นเบลอ",
         fog_start = "เริ่มหมอก", fog_end = "สิ้นสุดหมอก", atm_density = "ความหนาแน่นบรรยากาศ", atm_haze = "หมอกในอากาศ",
         exposure = "การรับแสง", env_diffuse = "แสงกระจาย", env_specular = "แสงสะท้อน",
         tint_hue = "เฉดสี", tint_strength = "ความเข้มสี",
@@ -83,7 +83,7 @@ local Locales = {
         presets = "프리셋", lighting = "조명", clock = "시간", sync = "실시간 동기화",
         bloom = "블룸", brightness = "밝기", contrast = "대비", saturation = "채도",
         bloom_int = "강도", bloom_size = "크기", lang = "언어", audio = "오디오", audio_toggle = "UI 소리",
-        fog = "안개", custom_shader = "커스텀 셰이더",
+        fog = "안개", custom_shader = "커스텀 셰이더", motion_blur = "모션 블러", motion_blur_strength = "모션 블러 강도",
         fog_start = "안개 시작", fog_end = "안개 끝", atm_density = "대기 밀도", atm_haze = "대기 안개",
         exposure = "노출", env_diffuse = "환경 확산", env_specular = "환경 반사",
         tint_hue = "색조", tint_strength = "색조 강도",
@@ -96,7 +96,7 @@ local Locales = {
         presets = "预设", lighting = "光照", clock = "时间", sync = "同步现实时间",
         bloom = "泛光", brightness = "亮度", contrast = "对比度", saturation = "饱和度",
         bloom_int = "强度", bloom_size = "大小", lang = "语言", audio = "音频", audio_toggle = "UI 音效",
-        fog = "雾", custom_shader = "自定义着色器",
+        fog = "雾", custom_shader = "自定义着色器", motion_blur = "动态模糊", motion_blur_strength = "动态模糊强度",
         fog_start = "雾起点", fog_end = "雾终点", atm_density = "大气密度", atm_haze = "大气雾霾",
         exposure = "曝光", env_diffuse = "环境漫反射", env_specular = "环境镜面",
         tint_hue = "色调", tint_strength = "色调强度",
@@ -109,7 +109,7 @@ local Locales = {
         presets = "プリセット", lighting = "ライティング", clock = "時間", sync = "リアルタイム同期",
         bloom = "ブルーム", brightness = "明るさ", contrast = "コントラスト", saturation = "彩度",
         bloom_int = "強度", bloom_size = "サイズ", lang = "言語", audio = "オーディオ", audio_toggle = "UI サウンド",
-        fog = "霧", custom_shader = "カスタムシェーダー",
+        fog = "霧", custom_shader = "カスタムシェーダー", motion_blur = "モーションブラー", motion_blur_strength = "モーションブラー強度",
         fog_start = "霧開始", fog_end = "霧終了", atm_density = "大気密度", atm_haze = "大気ヘイズ",
         exposure = "露出", env_diffuse = "環境拡散", env_specular = "環境スペキュラ",
         tint_hue = "色相", tint_strength = "色相強度",
@@ -122,7 +122,7 @@ local Locales = {
         presets = "Cài đặt sẵn", lighting = "Ánh sáng", clock = "Thời gian", sync = "Đồng bộ thời gian thực",
         bloom = "Phát sáng", brightness = "Độ sáng", contrast = "Tương phản", saturation = "Độ bão hòa",
         bloom_int = "Cường độ", bloom_size = "Kích thước", lang = "Ngôn ngữ", audio = "Âm thanh", audio_toggle = "Âm thanh UI",
-        fog = "Sương mù", custom_shader = "Shader tùy chỉnh",
+        fog = "Sương mù", custom_shader = "Shader tùy chỉnh", motion_blur = "Nhòe chuyển động", motion_blur_strength = "Cường độ nhòe",
         fog_start = "Bắt đầu sương", fog_end = "Kết thúc sương", atm_density = "Mật độ khí quyển", atm_haze = "Sương mù khí quyển",
         exposure = "Độ phơi sáng", env_diffuse = "Khuếch tán môi trường", env_specular = "Phản xạ môi trường",
         tint_hue = "Tông màu", tint_strength = "Độ mạnh tông",
@@ -135,7 +135,7 @@ local Locales = {
         presets = "Пресеты", lighting = "Освещение", clock = "Время", sync = "Синхронизация",
         bloom = "Свечение", brightness = "Яркость", contrast = "Контрастность", saturation = "Насыщенность",
         bloom_int = "Интенсивность", bloom_size = "Размер", lang = "Язык", audio = "Аудио", audio_toggle = "Звуки UI",
-        fog = "Туман", custom_shader = "Свой шейдер",
+        fog = "Туман", custom_shader = "Свой шейдер", motion_blur = "Размытие движения", motion_blur_strength = "Сила размытия",
         fog_start = "Начало тумана", fog_end = "Конец тумана", atm_density = "Плотность атмосферы", atm_haze = "Дымка атмосферы",
         exposure = "Экспозиция", env_diffuse = "Диффузное окружение", env_specular = "Зеркальное окружение",
         tint_hue = "Оттенок", tint_strength = "Сила оттенка",
@@ -200,8 +200,10 @@ local function gradientFill(parent, color1, color2, rotation) local grad = Insta
 -- 🎬 SHADER & TIME SYSTEM
 -- ============================================================
 local Shader = {
-    cc = nil, bloom = nil, atmosphere = nil,
+    cc = nil, bloom = nil, atmosphere = nil, motionBlur = nil,
     isSyncing = false, syncThread = nil, onTimeSyncUpdate = nil,
+    motionBlurEnabled = false, motionBlurStrength = 1,
+    lastCameraCFrame = nil,
     values = {
         brightness = 2, contrast = 0.1, saturation = 0.1, clockTime = 14,
         bloomIntensity = 0.8, bloomSize = 24, bloomThreshold = 0.9,
@@ -228,6 +230,14 @@ function Shader:init()
     self.cc = Instance.new("ColorCorrectionEffect"); self.cc.Parent = Lighting
     self.bloom = Instance.new("BloomEffect"); self.bloom.Parent = Lighting
     self.atmosphere = Instance.new("Atmosphere"); self.atmosphere.Parent = Lighting
+
+    -- BlurEffect ใช้จำลอง motion blur ตามการเคลื่อนกล้อง
+    self.motionBlur = Instance.new("BlurEffect")
+    self.motionBlur.Name = "MidnightMotionBlur"
+    self.motionBlur.Size = 0
+    self.motionBlur.Parent = Lighting
+    self.lastCameraCFrame = workspace.CurrentCamera and workspace.CurrentCamera.CFrame
+
     self:apply()
 end
 
@@ -298,6 +308,28 @@ function Shader:setPreset(preset)
             atmHaze = 1, fogSat = 0 },
         Sunset = { brightness = 2.2, contrast = 0.2, saturation = 0.4, clockTime = 17.5, bloomIntensity = 1, bloomSize = 28, bloomThreshold = 0.7,
             fogStart = 200, fogEnd = 1500, fogHue = 0.05, fogSat = 0.5, tintHue = 0.05, tintStrength = 0.15 },
+
+        -- 5 additional presets
+        Arctic = { brightness = 2.4, contrast = 0.15, saturation = 0.15, clockTime = 13,
+            bloomIntensity = 0.7, bloomSize = 26, bloomThreshold = 0.9,
+            fogStart = 250, fogEnd = 1800, fogHue = 0.55, fogSat = 0.25,
+            atmDensity = 0.28, atmHaze = 0.8, tintHue = 0.56, tintStrength = 0.12 },
+        Emerald = { brightness = 1.8, contrast = 0.25, saturation = 0.45, clockTime = 15,
+            bloomIntensity = 0.8, bloomSize = 24, bloomThreshold = 0.85,
+            fogStart = 150, fogEnd = 1200, fogHue = 0.34, fogSat = 0.45,
+            atmDensity = 0.32, atmHaze = 1.1, tintHue = 0.34, tintStrength = 0.16 },
+        Golden = { brightness = 2.3, contrast = 0.2, saturation = 0.35, clockTime = 16.5,
+            bloomIntensity = 1.15, bloomSize = 32, bloomThreshold = 0.75,
+            fogStart = 300, fogEnd = 2200, fogHue = 0.11, fogSat = 0.4,
+            atmDensity = 0.25, atmHaze = 1.2, tintHue = 0.11, tintStrength = 0.18 },
+        Dream = { brightness = 2.7, contrast = -0.15, saturation = 0.25, clockTime = 10,
+            bloomIntensity = 1.35, bloomSize = 40, bloomThreshold = 1,
+            fogStart = 100, fogEnd = 1600, fogHue = 0.82, fogSat = 0.22,
+            atmDensity = 0.38, atmHaze = 1.6, tintHue = 0.82, tintStrength = 0.13 },
+        Apocalypse = { brightness = 0.8, contrast = 0.55, saturation = -0.45, clockTime = 18.5,
+            bloomIntensity = 0.45, bloomSize = 18, bloomThreshold = 1.1,
+            fogStart = 40, fogEnd = 500, fogHue = 0.04, fogSat = 0.65,
+            atmDensity = 0.55, atmHaze = 2.4, tintHue = 0.03, tintStrength = 0.22 },
     }
     local o = overrides[preset] or overrides.Default
     local newVals = {}
@@ -308,6 +340,60 @@ function Shader:setPreset(preset)
 end
 
 Shader:init()
+
+-- Motion Blur driver: เพิ่มความเบลอทันทีเมื่อหันกล้อง และค่อย ๆ ทิ้งรอยเบลอหลังหยุดหัน
+-- หมายเหตุ: Roblox BlurEffect เป็น blur ทั่วหน้าจอ จึงจำลอง trail ด้วยการค้างและลดระดับ blur
+Shader.lastCameraCFrame = nil
+Shader.motionBlurTrail = 0
+
+RunService:BindToRenderStep("MidnightMotionBlur", Enum.RenderPriority.Camera.Value + 1, function(dt)
+    local camera = workspace.CurrentCamera
+    local blur = Shader.motionBlur
+    if not camera or not blur then return end
+
+    dt = math.clamp(dt or (1 / 60), 1 / 240, 1 / 20)
+    local current = camera.CFrame
+
+    if not Shader.lastCameraCFrame then
+        Shader.lastCameraCFrame = current
+        Shader.motionBlurTrail = 0
+        blur.Size = 0
+        return
+    end
+
+    local previous = Shader.lastCameraCFrame
+    Shader.lastCameraCFrame = current
+
+    if not Shader.motionBlurEnabled then
+        Shader.motionBlurTrail = 0
+        blur.Size = 0
+        return
+    end
+
+    -- วัดความเร็วการหมุนจากมุมกล้องจริงต่อวินาที ไม่ผูกกับ FPS
+    local relativeRotation = previous:ToObjectSpace(current)
+    local _, rotationAngle = relativeRotation:ToAxisAngle()
+    local angularSpeed = math.abs(rotationAngle) / dt
+
+    -- วัดความเร็วการเคลื่อนที่ของกล้อง
+    local linearSpeed = (current.Position - previous.Position).Magnitude / dt
+
+    -- แปลงความเร็วเป็นแรงเบลอ และจำกัดไม่ให้เบลอหนักเกินไป
+    local rotationBlur = math.clamp(angularSpeed / 5.5, 0, 1)
+    local movementBlur = math.clamp(linearSpeed / 85, 0, 0.65)
+    local inputBlur = math.max(rotationBlur, movementBlur)
+    local strength = math.clamp(Shader.motionBlurStrength or 1, 0.1, 3)
+    local targetTrail = math.clamp(inputBlur * strength, 0, 1)
+
+    -- เข้าไวตอนหันกล้อง ออกช้ากว่าเพื่อให้ภาพมีรอยลากตามหลัง
+    local response = targetTrail > Shader.motionBlurTrail and 22 or 3.2
+    local alpha = 1 - math.exp(-response * dt)
+    Shader.motionBlurTrail = Shader.motionBlurTrail + (targetTrail - Shader.motionBlurTrail) * alpha
+
+    -- คงระดับ blur ชั่วครู่หลังหยุดหมุน แล้วค่อย ๆ จาง
+    local targetSize = math.clamp(Shader.motionBlurTrail * 24, 0, 24)
+    blur.Size = blur.Size + (targetSize - blur.Size) * (1 - math.exp(-16 * dt))
+end)
 
 -- ============================================================
 -- 🌟 MAIN UI
@@ -742,6 +828,11 @@ createPresetButton("Cyberpunk", "Cyberpunk", Color3.fromRGB(255, 0, 150), Color3
 createPresetButton("Pastel", "Pastel", Color3.fromRGB(255, 180, 200), Color3.fromRGB(180, 200, 255), 7)
 createPresetButton("Noir", "Noir", Color3.fromRGB(50, 50, 50), Color3.fromRGB(20, 20, 20), 8)
 createPresetButton("Sunset", "Sunset", Color3.fromRGB(255, 140, 0), Color3.fromRGB(200, 50, 150), 9)
+createPresetButton("Arctic", "Arctic", Color3.fromRGB(80, 190, 255), Color3.fromRGB(210, 245, 255), 10)
+createPresetButton("Emerald", "Emerald", Color3.fromRGB(20, 130, 90), Color3.fromRGB(120, 230, 160), 11)
+createPresetButton("Golden", "Golden", Color3.fromRGB(180, 110, 25), Color3.fromRGB(255, 220, 100), 12)
+createPresetButton("Dream", "Dream", Color3.fromRGB(170, 120, 230), Color3.fromRGB(255, 190, 225), 13)
+createPresetButton("Apocalypse", "Apocalypse", Color3.fromRGB(90, 35, 35), Color3.fromRGB(210, 85, 45), 14)
 
 -- ============================================================
 -- 📋 TAB 3: SHADER SETTING (Sliders + Fog + Custom Shader)
@@ -783,7 +874,21 @@ local envSpecularSlider = slider(shaderSettingPage, "env_specular", 0, 1, Shader
 local tintHueSlider = slider(shaderSettingPage, "tint_hue", 0, 1, Shader.values.tintHue, 20, false, function(v) Shader.values.tintHue = v; Shader:apply() end, true)
 local tintStrengthSlider = slider(shaderSettingPage, "tint_strength", 0, 1, Shader.values.tintStrength, 21, false, function(v) Shader.values.tintStrength = v; Shader:apply() end)
 
-local resetShaderBtn = button(shaderSettingPage, "reset_shader", Theme.Danger, 22, function()
+-- 🎥 MOTION BLUR
+sectionHeader(shaderSettingPage, "motion_blur", Icons.Settings, 22)
+local motionBlurToggle = toggle(shaderSettingPage, "motion_blur", Shader.motionBlurEnabled, 23, function(on)
+    Shader.motionBlurEnabled = on
+    if not on and Shader.motionBlur then
+        Shader.motionBlur.Size = 0
+        Shader.motionBlurTrail = 0
+        Shader.lastCameraCFrame = nil
+    end
+end)
+local motionBlurStrengthSlider = slider(shaderSettingPage, "motion_blur_strength", 0.1, 3, Shader.motionBlurStrength, 24, false, function(v)
+    Shader.motionBlurStrength = v
+end)
+
+local resetShaderBtn = button(shaderSettingPage, "reset_shader", Theme.Danger, 25, function()
     Shader:setPreset("Default")
     syncToggle:SetState(false)
     clockSlider:SetValue(14)
@@ -801,6 +906,15 @@ local resetShaderBtn = button(shaderSettingPage, "reset_shader", Theme.Danger, 2
     envSpecularSlider:SetValue(1)
     tintHueSlider:SetValue(0.6)
     tintStrengthSlider:SetValue(0)
+    Shader.motionBlurEnabled = false
+    Shader.motionBlurStrength = 1
+    motionBlurToggle:SetState(false)
+    motionBlurStrengthSlider:SetValue(1)
+    if Shader.motionBlur then
+        Shader.motionBlur.Size = 0
+        Shader.motionBlurTrail = 0
+        Shader.lastCameraCFrame = nil
+    end
 end)
 
 -- ============================================================
@@ -1026,4 +1140,8 @@ UserInputService.InputEnded:Connect(function(input)
     end
 end)
 
-print("[Midnight Glass UI v17] ✨ โหลดเสร็จ! (Profile + Fog + Custom Shader + Enhanced Sounds)")
+sg.Destroying:Connect(function()
+    RunService:UnbindFromRenderStep("MidnightMotionBlur")
+end)
+
+print("[Midnight Glass UI v19] ✨ โหลดเสร็จ! (5 New Presets + Motion Blur + Fog + Custom Shader)")
